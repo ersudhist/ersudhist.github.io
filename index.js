@@ -81,7 +81,7 @@
     "HTML",
     "CSS",
     "JavaScript",
-    "JAVA",
+    "Java",
     "MySQL",
     "Netlify",
     "GIT",
@@ -90,7 +90,7 @@
     "Maven",
     "DSA",
     "Spring",
-    "Springoot",
+    "Spring Boot",
     "STS",
     "Postman",
     "Swagger"
