@@ -45,6 +45,7 @@ nav.sticky{
 .logo{
     font-size: 30px;
 }
+
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -55,7 +56,7 @@ nav ul li{
 nav ul li a{
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     position: relative;
     font-family: "montserrat";
     font-weight: bold
@@ -75,6 +76,9 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+
+
+
 .header-text{
     margin-top: 10%;
     font-size: 30px;
@@ -83,7 +87,6 @@ nav ul li a:hover::after{
     bottom: 3%;
    
 }
-
 .header-text h1{
     font-size: 60px;
     margin: 20px 0px;
@@ -119,7 +122,7 @@ nav ul li a:hover::after{
 
 #about{
 padding:60px 0px;
-color: #ababab;
+color: #b8b7b7;
 background-color: #0a192f;
 }
 .row{
@@ -137,12 +140,19 @@ background-color: #0a192f;
 
 .about-col-2{
     flex-basis: 60%;
-
 }
 .sub-title{
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 600;
     color: white;
+    display: inline;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-color: #ff6b81;
+}
+
+#user-detail-intro{
+    margin-top: 20px;
 }
 .about-col-2 p{
     line-height: 20px;
@@ -171,30 +181,29 @@ background-color: #0a192f;
 .skill-ed.active::after{
     width:50%;
 }
-
 .contents ul li{
    list-style: none;
    margin:15px 0px;
-
 }
 .contents ul li span{
-    color: #b54769;
+    color: #d35b81;
     font-size: 16px;
 }
 .contents{
-    display:none ;
+    display: none;
 }
 
 .contents ul li i{
-margin-right: 10px;
-font-size: 20px;
+    margin-right: 10px;
+    font-size: 20px;
 }
 
 .contents.active-tab{
     display:block ;
 }
 
-/* Skills */
+
+/*------------------ Skills----------------------- */
 
 #Skills{
     width: 100%;
@@ -202,17 +211,18 @@ font-size: 20px;
 }
 
 #skill_container{
-   width: 100%;
+    width: 100%;
     display: grid;
     margin: auto;
     grid-template-columns: repeat(5,1fr);
     align-items: center;
     gap: 20px;
     padding: 10px;
-    /* border: 1px solid red; */
-    
+    margin-top: 20px;
+    background-color: #1f4882;
     /* border: 1px solid red; */
 }
+
 #skill_container div{
     height: 100%;
     /* width: 100%; */
@@ -221,28 +231,46 @@ font-size: 20px;
    text-align: center;
    background-color: #1f4882;
    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-   border-radius: 10px;
-   
+   border-radius: 10px;  
 }
-#skill_container div:hover{
-    
-transform: scale(1.1);
-    border: 2px solid white;
+
+#skill_container div:hover{    
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(4, 12, 22, 0.6); 
+    transition: transform 0.5s;
+    /* border: 2px solid white; */
 }
+
 #skill_container div h2{
     /* width: 100%; */
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
 }
+
 #skill_container img{
-    width: 100%;
-    height: 70%;
+    width: 80%;
+    /* height: 60%; */
     padding: 20px;
     border-radius: 30px;
 }
 
+/* --------------------Github----------------------- */
 
+#github{
+    background-color:#0a192f ;
+    margin-top: 40px;
+}
+.section-title{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    display: inline;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-color: #ff6b81;   
+}
 
-/* Experience */
+/*------------------ Experience------------------------ */
 
 #exp{
     border-radius: 20px;
@@ -250,8 +278,7 @@ transform: scale(1.1);
     margin-top: 10px;
 }
 
-/* Portfolio-------- */
-
+/*--------------------- Portfolio------------------ */
 
 #projects{
     padding: 50px 0px;
@@ -269,7 +296,6 @@ transform: scale(1.1);
 .work{
     display: grid;
     grid-template-columns: 65% 35%;
-    
     border-radius: 10px;
     border: 2px solid #b54769;
     background-color: #080808;
@@ -393,15 +419,14 @@ form input,form textarea{
     color: #ff004f;
 }
 
-
-
 nav .fas{
     display: none;
 }
 
 
-@media  screen and (min-width:280px) and (max-width:600px){
+/* ====================Responsive========================= */
 
+@media  screen and (min-width:540px) and (max-width:600px){
     #header{
         background-image: url(images/plane_black.PNG);
     }
@@ -469,19 +494,18 @@ nav ul .fas{
     margin-right: 20px;
 }
 
-/* Skills */
+/*----------------- Skills-------------------- */
 
 #skill_container{
     grid-template-columns: repeat(2,1fr);
 }
-
 
 #skill_container div h2{
     margin-top: 5px;
     font-size: 18px;
 }
 
-/* Portfolio projects */
+/*------------------- Portfolio projects------------------ */
 
 .project-list{
     grid-template-columns: repeat(1,1fr);
@@ -505,16 +529,14 @@ nav ul .fas{
     font-size: 14px;
 }
 
-
 .work{
     grid-template-columns: repeat(1,1fr);   
    
    }
-
 }
 
-@media  screen and (min-width:601px) and (max-width:950px){
 
+@media  screen and (min-width:601px) and (max-width:950px){
 .header-text{
     font-size: 16px;
     right:13%;
@@ -603,8 +625,8 @@ nav ul .fas{
 .project-heading{
     color: #ce3eac;
 }
-.git-stats{
 
+.git-stats{
     padding: 10px;
     display: flex;
     justify-content: space-around;

@@ -1,14 +1,14 @@
-// document.getElementById("resume-link-1").addEventListener("click", () => {
-//     window.open(
-//       "https://drive.google.com/file/d/1cei-a3ao4TDLxY8UXRCyamZ-2a4631mw/view?usp=share_link"
-//     );
-//   });
+document.getElementById("resume-link-1").addEventListener("click", () => {
+    window.open(
+      "https://drive.google.com/file/d/1jOx6OMQksGaXAv01TVGh1jIzNLIB0DBD/view?usp=sharing"
+    );
+  });
   
-//   document.getElementById("resume-link-2").addEventListener("click", () => {
-//     window.open(
-//       "https://drive.google.com/file/d/1cei-a3ao4TDLxY8UXRCyamZ-2a4631mw/view?usp=share_link"
-//     );
-//   });
+  document.getElementById("resume-link-2").addEventListener("click", () => {
+    window.open(
+      "https://drive.google.com/file/d/1jOx6OMQksGaXAv01TVGh1jIzNLIB0DBD/view?usp=sharing"
+    );
+  });
   
   let details = document.getElementsByClassName("skill-ed");
   let content = document.getElementsByClassName("contents");
@@ -122,3 +122,4 @@
     AppendSkills(skill_arr);
   });
   
+  //https://drive.google.com/file/d/1jOx6OMQksGaXAv01TVGh1jIzNLIB0DBD/view?usp=sharing 
