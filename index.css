@@ -426,7 +426,7 @@ nav .fas{
 
 /* ====================Responsive========================= */
 
-@media  screen and (min-width:540px) and (max-width:600px){
+@media  screen and (min-width:280px) and (max-width:600px){
     #header{
         background-image: url(images/plane_black.PNG);
     }
