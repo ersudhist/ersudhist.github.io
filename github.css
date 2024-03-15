@@ -32,13 +32,47 @@
   
   .calendar {
       width:100%;
-      border: 1px solid #DDDDDD;
+      /* border: 1px solid #DDDDDD; */
       border-radius: 3px;
       text-align: center;
       margin: auto;
-      padding:1%;
+      /* padding:1%; */
       margin-top: 20px;
   }
+
+  /* Default styles for the GitHub chart */
+.github-chart {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: auto;
+  }
+
+  /* Media query for screens smaller than 768px (typical mobile devices) */
+@media only screen and (max-width: 767px) {
+    .github-chart {
+      width: 100%;
+    }
+  }
+  
+  /* Media query for screens between 768px and 1024px (typical tablets) */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .github-chart {
+      width: 80%;
+    }
+  }
+  
+  /* Media query for screens larger than 1024px (typical desktop) */
+  @media only screen and (min-width: 1025px) {
+    .github-chart {
+      width: 60%;
+    }
+  }
+
+
+
+
+
   .git{
     background-color: #101010;
   }

@@ -10,10 +10,8 @@
   <link rel="stylesheet" href="github.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
   <script src="https://kit.fontawesome.com/71a9c32d59.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-
   <link rel="shortcut icon" href="./assets/portfolio-favicon.png" type="image/x-icon">
+
 </head>
 
 <body>
@@ -21,7 +19,12 @@
     <div id="home">
       <nav id="nav-menu">
         <a href="#header">
-          <h1 class="logo">SUDHIST</h1>
+          <h1 class="logo">
+            <div>
+              <img src="./assets/myimage.jpg"
+                style="width: 50px; border-radius: 50%"/>
+            </div>
+          </h1>
         </a>
         <ul id="sidemenu">
           <li><a href="#header" class="nav-link home">Home</a></li>
@@ -64,17 +67,20 @@
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
           <p id="user-detail-intro">
-            Highly motivated and skilled Java Backend Developer with a strong foundation in console-based projects and leadership experience. Proficient in HTML, CSS, Javascript, Java, Spring Boot, Hibernate, and Maven. Proven problem-solving abilities and a result-oriented approach, ready to contribute to impactful software development projects.
+            Highly motivated and skilled Java Backend Developer with a strong foundation 
+            in console-based projects and leadership experience. Proficient in HTML, CSS, 
+            Javascript, Java, Spring Boot, Hibernate, and Maven. Proven problem-solving 
+            abilities and a result-oriented approach, ready to contribute to impactful software development projects.
           </p>
-          <br />
+          <br/>
           <p>
-            Drop a mail @ <a href="mailto:kumarsudhist@gmail.com" style="color: yellow;">kumarsudhist@gmail.com</a>
+            Drop a mail @ <a href="mailto:kumarsudhist@gmail.com" style="color: yellow;"> kumarsudhist@gmail.com </a>
           </p>
           <div class="details">
             <p class="skill-ed active" onclick="opentab('Skills')">
               Soft Skills
             </p>
-            <p class="skill-ed" onclick="opentab('Education')">Education</p>
+            <p class="skill-ed" onclick="opentab('Education')"> Education </p>
           </div>
 
           <div class="contents active-tab" id="Skills">
@@ -100,67 +106,63 @@
       </div>
     </div>
   </div>
+
   <div id="skills" class="container">
-    <h1 class="sub-title">Technical Skills</h1>
+    <h1 class="sub-title"> Technical Skills </h1>
     <div id="skill_container"></div>
   </div>
 
-  <!--------------------- Github stats ----------------------->
 
-  <div class="" id="github">
-    <section class="container git" id="github">
-      <h2 class="section-title">GitHub Skills</h2><br><br>
+      <!--------------------- Github stats ----------------------->
+      <div class="" id="github">
+        <h2 class="section-title"> GitHub Skills </h2>
+        <section class="container-git" id="github">
 
-      <!--------------------Git Status ----------------------->
-      <div>
-        <p align="center"><img id="github-top-langs" align="center"
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=ersudhist&custom_title=Most_language_Used&theme=radical&show_icons=true&locale=en&layout=compact"
-            alt="ersudhist" height=200px; width=70% /></p>
-      </div>
-      <br>
-      <div id="">
-        <p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img
-              src="https://github-profile-trophy.vercel.app/?username=ersudhist" alt="ersudhist" width=50%/></a>
-        </p>
-      </div>
+          <!--------------------- Github Status ----------------------->
 
-      <br>
-      <div class="git_three_stats">
-        <div>
-          <p align="center">&nbsp;<img id="github-stats-card" width="50%" align="center"
+          <div>
+            <img
+              id="github-streak-stats"
+              src="https://github-readme-streak-stats.herokuapp.com?user=ersudhist"
+              alt="ersudhist"
+              style="max-width: 100%; height: auto"
+            />
+          </div>
+        
+          <div>
+            <img
+              id="github-top-langs"
+              src="https://github-readme-stats.vercel.app/api/top-langs/?username=ersudhist&custom_title=Most_language_Used&theme=radical&show_icons=true&locale=en&layout=compact"
+              alt="ersudhist"
+              style="max-width: 100%; height: auto"
+            />
+          </div>
+        
+          <div>
+            <img
+              id="github-stats-card"
               src="https://github-readme-stats.vercel.app/api?username=ersudhist&theme=radical&show_icons=true&locale=en"
-              alt="clrsurya11" /></p>
+              alt="clrsurya11"
+              style="max-width: 100%; height: auto"
+            />
+          </div>
+        </section>
+        <div class="git-stat-div react-activity-calendar">
+          <!-- Prepare a container for your calendar. -->
+          <h2 class="section-title">GitHub Calendar</h2>
+          <div class="calendar">
+            <!-- Loading stuff -->
+            <img src="https://ghchart.rshah.org/ersudhist"alt="ersudhist's Github chart"class="github-chart"/>
+          </div>
         </div>
-
-        <div>
-          <p align="center">
-            <img id="github-streak-stats" width="50%" align="center"
-              src="https://github-readme-streak-stats.herokuapp.com?user=ersudhist&theme=dark&hide_border=true&border_radius=5.1" alt="ersudhist" /></p>
-        </div>
-
       </div>
+          
 
-      <br>
-      <br>
-      <div class="git-stat-div react-activity-calendar" style="width: 70%;margin: auto;background-color: #fff;color:rgb(148, 139, 139);">
-        <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-        <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
-
-        <div style="background-color: white; padding: 10px; border-radius: 9px; width: 70%;" class="calendar react-activity-calenda">
-        Loading the data just for you.
-        </div>
-    </div>  
-        <!-- Loading stuff -->
-
-      </div>
-    </section>
-
-  </div>
-
+   <!--------------------- Projects ----------------------->
 
   <div id="projects">
     <div class="container">
-      <h1 class="sub-title">My Projects</h1>
+      <h1 class="sub-title"> My Projects </h1>
       <div class="project-list">
 
       <!--------------------- First Project ----------------------->
@@ -350,7 +352,3 @@
 </html>
 
 <script src="./index.js"></script>
-<script>
-  GitHubCalendar(".calendar", "ersudhist");
-  GitHubCalendar(".calendar", "ersudhist", { responsive: true });
-</script>
