@@ -122,4 +122,23 @@ document.getElementById("resume-link-1").addEventListener("click", () => {
     AppendSkills(skill_arr);
   });
   
+
+let typed = new Typed('#typicalText', {
+  strings: ['Java Backend Developer'],
+  typeSpeed: 50,
+  loop: true,
+  loopCount: Infinity,
+  showCursor: false,
+  cursorChar: '|',
+});
+
+window.addEventListener('resize', function() {
+  var heading = document.getElementById('typicalHeading');
+  if (window.innerWidth >= 768) {
+    heading.classList.add('md:text-4xl');
+  } else {
+    heading.classList.remove('md:text-4xl');
+  }
+});
+
   //https://drive.google.com/file/d/1jOx6OMQksGaXAv01TVGh1jIzNLIB0DBD/view?usp=sharing 

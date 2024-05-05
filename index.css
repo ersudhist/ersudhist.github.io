@@ -24,13 +24,13 @@ body {
   padding: 10px 10%;
 }
 nav {
-  display: flex;
   background-color: #0e2342;
   width: 100%;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 5px 10%;
+  padding: 5px 5%;
 }
 
 nav.sticky {
@@ -41,6 +41,7 @@ nav.sticky {
   transition: 0.6s;
   z-index: 1;
 }
+
 .logo {
   font-size: 30px;
 }
@@ -81,8 +82,14 @@ nav ul li a:hover::after {
   right: 16%;
   bottom: 3%;
 }
+
+.header-text p {
+  font-weight: 700;
+  color: #cbd5e0;
+}
+
 .header-text h1 {
-  font-size: 60px;
+  font-size: 50px;
   margin: 20px 0px;
 }
 
@@ -103,16 +110,16 @@ nav ul li a:hover::after {
 }
 #resume-button-2 {
   display: inline-block;
-  /* border: 1px solid #ff004f; */
   text-decoration: none;
   color: #fff;
   background-color: #ff004f;
   padding: 10px 20px;
   margin-bottom: 25px;
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
 }
-/* About */
+
+/*-------------- About --------------*/
 
 #about {
   padding: 60px 0px;
@@ -174,7 +181,7 @@ nav ul li a:hover::after {
   transition: transform(0.5s);
 }
 .skill-ed.active::after {
-  width: 50%;
+  width: 100%;
 }
 .contents ul li {
   list-style: none;
@@ -275,9 +282,9 @@ nav ul li a:hover::after {
 
 #center-div {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: 100vh; /* 100% of the viewport height */
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
 }
 
 /*------------------ Experience------------------------ */
@@ -430,6 +437,8 @@ nav .fas {
   display: none;
 }
 
+
+
 /* ====================Responsive========================= */
 
 @media screen and (min-width: 280px) and (max-width: 600px) {
@@ -447,11 +456,16 @@ nav .fas {
     margin: 5% auto;
     /* height: 50vh; */
     height: auto;
-    text-align: center;
+    /* text-align: center; */
     align-items: center;
     justify-content: center;
     position: static;
     font-size: 16px;
+  }
+
+  .header-text p {
+    margin-right: 55px;
+    font-size: 20px;
   }
 
   .header-text h1 {
